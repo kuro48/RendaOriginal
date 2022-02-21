@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sx0-JC-Xyp">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RendaOriginal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="toRenda" id="BYZ-38-t0r" customClass="ViewController" customModule="RendaOriginal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,11 +29,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGo-Fr-q3A">
-                                <rect key="frame" x="167" y="580" width="80" height="50"/>
-                                <color key="backgroundColor" red="0.86274509799999999" green="0.0" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="147" y="580" width="120" height="80"/>
+                                <color key="backgroundColor" red="1" green="0.23137254900000001" blue="0.39291733080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="jdp-XI-O3V"/>
-                                    <constraint firstAttribute="height" constant="50" id="tOH-rW-eRF"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="jdp-XI-O3V"/>
+                                    <constraint firstAttribute="height" constant="80" id="tOH-rW-eRF"/>
                                 </constraints>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
@@ -42,34 +42,19 @@
                                     <action selector="count" destination="BYZ-38-t0r" eventType="touchUpInside" id="7VC-h4-FxQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owA-Cj-BSK">
-                                <rect key="frame" x="167" y="690" width="80" height="50"/>
-                                <color key="backgroundColor" red="0.86274509799999999" green="0.0" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="XAN-3X-Tql"/>
-                                    <constraint firstAttribute="height" constant="50" id="qmT-Wy-Eoh"/>
-                                </constraints>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="START"/>
-                                <connections>
-                                    <action selector="start" destination="BYZ-38-t0r" eventType="touchUpInside" id="KlQ-gm-SpU"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9bU-iZ-uzs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2uE-4W-saH"/>
-                            <constraint firstItem="owA-Cj-BSK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="612-U0-5cd"/>
                             <constraint firstItem="WGo-Fr-q3A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QOE-sg-qY0"/>
                             <constraint firstItem="9bU-iZ-uzs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="bjP-Zs-Vn9"/>
                             <constraint firstItem="WGo-Fr-q3A" firstAttribute="top" secondItem="Wkr-Zk-xAZ" secondAttribute="bottom" constant="240" id="cZf-AL-LrU"/>
                             <constraint firstItem="Wkr-Zk-xAZ" firstAttribute="top" secondItem="9bU-iZ-uzs" secondAttribute="bottom" constant="70" id="eps-NG-NIA"/>
                             <constraint firstItem="Wkr-Zk-xAZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sJb-TT-wmP"/>
-                            <constraint firstItem="owA-Cj-BSK" firstAttribute="top" secondItem="WGo-Fr-q3A" secondAttribute="bottom" constant="60" id="xhH-CK-KFP"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ULr-39-ZI0"/>
                     <connections>
                         <outlet property="countBtn" destination="WGo-Fr-q3A" id="wXT-i9-rVK"/>
                         <outlet property="countNumber" destination="Wkr-Zk-xAZ" id="r5K-np-tBr"/>
@@ -97,7 +82,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QS0-Sl-jom">
                                 <rect key="frame" x="167" y="528" width="80" height="50"/>
-                                <color key="backgroundColor" red="0.86274509799999999" green="0.066666666669999999" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.23137254900000001" blue="0.39291733080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="AAo-fI-8V1"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="PmU-4g-btr"/>
@@ -135,6 +120,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBe-am-dcV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1106" y="129"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="roy-hM-xec">
+            <objects>
+                <viewController id="sx0-JC-Xyp" customClass="StartViewController" customModule="RendaOriginal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mdq-tj-82O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="連打バトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7F8-Yx-Xq4">
+                                <rect key="frame" x="106" y="264" width="202" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9i0-yq-Wfn">
+                                <rect key="frame" x="147" y="592" width="120" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.23137254900000001" blue="0.39291733080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="aje-rx-eDd"/>
+                                    <constraint firstAttribute="height" constant="70" id="fcf-Dz-dRi"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="スタート">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="start:" destination="sx0-JC-Xyp" eventType="touchUpInside" id="dY0-nQ-3ar"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jM2-HF-fRT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jM2-HF-fRT" firstAttribute="bottom" secondItem="9i0-yq-Wfn" secondAttribute="bottom" constant="200" id="Yay-GD-xna"/>
+                            <constraint firstItem="7F8-Yx-Xq4" firstAttribute="centerX" secondItem="mdq-tj-82O" secondAttribute="centerX" id="iQE-gO-7Lg"/>
+                            <constraint firstItem="9i0-yq-Wfn" firstAttribute="centerX" secondItem="mdq-tj-82O" secondAttribute="centerX" id="nmD-PT-Rij"/>
+                            <constraint firstItem="9i0-yq-Wfn" firstAttribute="top" secondItem="7F8-Yx-Xq4" secondAttribute="bottom" constant="280" id="umO-ah-9eb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mOS-LL-atq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-646" y="129"/>
         </scene>
     </scenes>
     <resources>

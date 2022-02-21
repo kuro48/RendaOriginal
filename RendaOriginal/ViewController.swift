@@ -5,9 +5,10 @@
 //  Created by 黒川龍之介 on 2022/02/14.
 //
 import UIKit
+import RealmSwift
 
 class ViewController: UIViewController {
-    
+    let realm = try! Realm()
 
     @IBOutlet var countNumber: UILabel!
     @IBOutlet var countBtn: UIButton!
@@ -21,6 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        start()
     }
 
     @IBAction func count() {
@@ -40,7 +42,9 @@ class ViewController: UIViewController {
 
     }
     
-    @IBAction func start(){
+    func start(){
+        number = 0
+        countNumber.text = String(number)
         timerCount = 30.00
         if !timer.isValid{
                     timer = Timer.scheduledTimer(timeInterval: 0.01,
